@@ -28,11 +28,12 @@ for page in page_numbers:
         safe.append(page)
 print(safe)
 
-total = 0
-for page in safe:
-    middle_index = len(page) // 2
-    middle_page = page[middle_index]
-    
-    total += middle_page
-
-print(total)
+def retrieve_total(pages):
+    total = 0
+    for page in pages:
+        middle_index = len(page) // 2
+        middle_page = page[middle_index]
+        
+        total += middle_page
+    return total
+print(retrieve_total(safe))
