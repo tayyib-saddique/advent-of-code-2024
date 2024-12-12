@@ -6,7 +6,6 @@ from functions import load_data
 data = load_data(6)
 
 data = data.splitlines()
-print(data)
 
 def find_guard(grid):
     for row_index, row in enumerate(grid):
