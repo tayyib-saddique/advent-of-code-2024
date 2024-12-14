@@ -12,12 +12,12 @@ data = data.split()
 print(data)
 
 antennas = {}
-for r, row in enumerate(data):
-    for c, cell in enumerate(row):
+for index_row, row in enumerate(data):
+    for index_col, cell in enumerate(row):
         if cell != '.':
             if cell not in antennas:
                 antennas[cell] = []
-            antennas[cell].append((r, c))
+            antennas[cell].append((index_row, index_row))
 
 locations = []
 bounds = len(data[0])
