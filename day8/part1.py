@@ -17,7 +17,7 @@ for index_row, row in enumerate(data):
         if cell != '.':
             if cell not in antennas:
                 antennas[cell] = []
-            antennas[cell].append((index_row, index_row))
+            antennas[cell].append((index_row, index_col))
 
 locations = []
 bounds = len(data[0])
